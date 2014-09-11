@@ -7,6 +7,7 @@
 //
 
 #import "MGAppDelegate.h"
+#import "MGSimpleView.h"
 
 @implementation MGAppDelegate
 
@@ -14,7 +15,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //create view
+    CGRect frame1 = CGRectMake(50, 50, 100, 100);
+    MGSimpleView* view1 = [[MGSimpleView alloc] initWithFrame:frame1];
+    view1.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:view1];
+    
+    //create view
+    CGRect frame2 = CGRectMake(20, 20, 50, 50);
+    MGSimpleView* view2 = [[MGSimpleView alloc] initWithFrame:frame2];
+    view2.backgroundColor = [UIColor blueColor];
+    [view1 addSubview:view2];
+    
+    self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

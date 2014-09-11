@@ -19,6 +19,7 @@
 		7FA7608A19C2300F001F8CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA7607219C2300F001F8CFF /* UIKit.framework */; };
 		7FA7609219C2300F001F8CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FA7609019C2300F001F8CFF /* InfoPlist.strings */; };
 		7FA7609419C2300F001F8CFF /* ViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7609319C2300F001F8CFF /* ViewTestTests.m */; };
+		7FA760A219C2318B001F8CFF /* MGSimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA760A119C2318B001F8CFF /* MGSimpleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		7FA7608F19C2300F001F8CFF /* ViewTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewTestTests-Info.plist"; sourceTree = "<group>"; };
 		7FA7609119C2300F001F8CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7FA7609319C2300F001F8CFF /* ViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTestTests.m; sourceTree = "<group>"; };
+		7FA760A019C2318B001F8CFF /* MGSimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGSimpleView.h; path = ../MGSimpleView.h; sourceTree = "<group>"; };
+		7FA760A119C2318B001F8CFF /* MGSimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGSimpleView.m; path = ../MGSimpleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		7FA7607419C2300F001F8CFF /* ViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				7FA760A019C2318B001F8CFF /* MGSimpleView.h */,
+				7FA760A119C2318B001F8CFF /* MGSimpleView.m */,
 				7FA7607D19C2300F001F8CFF /* MGAppDelegate.h */,
 				7FA7607E19C2300F001F8CFF /* MGAppDelegate.m */,
 				7FA7608019C2300F001F8CFF /* Images.xcassets */,
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA760A219C2318B001F8CFF /* MGSimpleView.m in Sources */,
 				7FA7607F19C2300F001F8CFF /* MGAppDelegate.m in Sources */,
 				7FA7607B19C2300F001F8CFF /* main.m in Sources */,
 			);
